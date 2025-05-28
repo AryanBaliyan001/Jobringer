@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JobRinger</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="navbar">
+    <div class="logo">Job<span>Ringer</span></div>
+    <nav class="nav-links">
+      <a href="#">Find Jobs</a>
+      <a href="#">Companies</a>
+      <a href="#">Career Advice</a>
+      <a href="#">Salary Guide</a>
+    </nav>
+    <div class="nav-actions">
+      <i class="fas fa-bell notification"></i>
+      <i class="fas fa-bookmark"></i>
+      <button class="sign-in">Sign In</button>
+      <button class="post-job">Post a Job</button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Find Your Dream Job Today</h1>
+      <p>Discover thousands of job opportunities with all the information you need.</p>
+
+      <div class="search-box">
+        <div class="input-group">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Job title, keywords, or company">
+        </div>
+        <div class="input-group">
+          <i class="fas fa-location-dot"></i>
+          <input type="text" placeholder="City or location">
+        </div>
+        <button class="search-btn">Search Jobs</button>
+      </div>
+
+      <div class="popular-tags">
+        <span>Popular:</span>
+        <button>Remote</button>
+        <button>Full-time</button>
+        <button>Software Engineer</button>
+        <button>Marketing</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED JOBS -->
+  <section class="featured-jobs">
+    <div class="featured-header">
+      <h2>Featured Jobs</h2>
+      <a href="#" class="view-all">View all jobs <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="job-cards">
+      <!-- Job Card 1 -->
+      <div class="job-card">
+        <div class="job-header">
+          <img src="hero/job.jpg" alt="Company Logo" class="company-logo">
+          <div class="job-title">
+            <h3>Senior Frontend Developer</h3>
+            <span><i class="fas fa-building"></i> TechCorp</span>
+          </div>
+          <i class="fas fa-bookmark save-icon"></i>
+        </div>
+        <p class="job-location"><i class="fas fa-location-dot"></i> San Francisco, CA <span class="badge">Remote</span></p>
+        <div class="tags">
+          <span>Full-time</span>
+          <span>React</span>
+          <span>JavaScript</span>
+          <span>UI/UX</span>
+        </div>
+        <p class="description">We're looking for an experienced Frontend Developer to join our team. You'll be responsible for building user interfaces...</p>
+        <div class="salary-time">
+          <span class="salary">$120K - $150K</span>
+          <span class="time"><i class="far fa-clock"></i> 2 days ago</span>
+        </div>
+        <button class="view-btn">View Details</button>
+      </div>
+
+      <!-- Job Card 2 -->
+      <div class="job-card">
+        <div class="job-header">
+          <img src="hero/job.jpg" alt="Company Logo" class="company-logo">
+          <div class="job-title">
+            <h3>Product Manager</h3>
+            <span><i class="fas fa-building"></i> InnovateTech</span>
+          </div>
+          <i class="fas fa-bookmark save-icon"></i>
+        </div>
+        <p class="job-location"><i class="fas fa-location-dot"></i> New York, NY</p>
+        <div class="tags">
+          <span>Full-time</span>
+          <span>Product</span>
+          <span>Agile</span>
+          <span>SaaS</span>
+        </div>
+        <p class="description">Join our product team to lead the development of innovative software solutions. You'll work closely with engineering,...</p>
+        <div class="salary-time">
+          <span class="salary">$110K - $140K</span>
+          <span class="time"><i class="far fa-clock"></i> 1 week ago</span>
+        </div>
+        <button class="view-btn">View Details</button>
+      </div>
+
+      <!-- Job Card 3 -->
+      <div class="job-card">
+        <div class="job-header">
+          <img src="hero/design.jpg" alt="Company Logo" class="company-logo">
+          <div class="job-title">
+            <h3>UX/UI Designer</h3>
+            <span><i class="fas fa-building"></i> DesignHub</span>
+          </div>
+          <i class="fas fa-bookmark save-icon"></i>
+        </div>
+        <p class="job-location"><i class="fas fa-location-dot"></i> Austin, TX <span class="badge">Remote</span></p>
+        <div class="tags">
+          <span>Contract</span>
+          <span>Figma</span>
+          <span>UI Design</span>
+          <span>Prototyping</span>
+        </div>
+        <p class="description">We're seeking a talented UX/UI Designer to create beautiful, intuitive interfaces for our clients. You should have a strong...</p>
+        <div class="salary-time">
+          <span class="salary">$90K - $120K</span>
+          <span class="time"><i class="far fa-clock"></i> 3 days ago</span>
+        </div>
+        <button class="view-btn">View Details</button>
+      </div>
+    </div>
+  </section>
+
+  <!--Top companies hiring now-->
+  <section class="hiring-section">
+    <h2 class="section-title">Top Companies Hiring Now</h2>
+    <p class="section-subtitle">Discover opportunities from leading companies across various industries</p>
+
+    <div class="companies">
+      <div class="company-card">
+        <img src="company-logos/google.png" alt="Google" class="company-logo" />
+        <h3>Google</h3>
+        <p>245 jobs</p>
+      </div>
+
+      <div class="company-card">
+        <img src="company-logos/microsoft.png" alt="Microsoft" class="company-logo" />
+        <h3>Microsoft</h3>
+        <p>189 jobs</p>
+      </div>
+
+      <div class="company-card">
+        <img src="company-logos/amazon.png" alt="Amazon" class="company-logo" />
+        <h3>Amazon</h3>
+        <p>372 jobs</p>
+      </div>
+
+      <div class="company-card">
+        <img src="company-logos/apple.png" alt="Apple" class="company-logo" />
+        <h3>Apple</h3>
+        <p>156 jobs</p>
+      </div>
+
+      <div class="company-card">
+        <img src="company-logos/meta.png" alt="Meta" class="company-logo" />
+        <h3>Meta</h3>
+        <p>203 jobs</p>
+      </div>
+
+      <div class="company-card">
+        <img src="company-logos/netflix.png" alt="Netflix" class="company-logo" />
+        <h3>Netflix</h3>
+        <p>84 jobs</p>
+      </div>
+    </div>
+  </section>
+
+  <!--Explore Job Categories-->
+  <section class="categories-section">
+    <h2 class="section-title">Explore Job Categories</h2>
+    <p class="section-subtitle">Browse jobs by category to find the perfect role for your skills and experience</p>
+
+    <div class="category-grid">
+      <div class="category-card">
+        <div class="icon-wrapper">
+          <img src="icons/briefcase.svg" alt="Technology" />
+        </div>
+        <h3>Technology</h3>
+        <p>1,245 jobs available</p>
+        <button class="browse-btn">Browse Jobs</button>
+      </div>
+
+      <div class="category-card">
+        <div class="icon-wrapper">
+          <img src="icons/briefcase.svg" alt="Marketing" />
+        </div>
+        <h3>Marketing</h3>
+        <p>853 jobs available</p>
+        <button class="browse-btn">Browse Jobs</button>
+      </div>
+
+      <div class="category-card">
+        <div class="icon-wrapper">
+          <img src="icons/briefcase.svg" alt="Design" />
+        </div>
+        <h3>Design</h3>
+        <p>675 jobs available</p>
+        <button class="browse-btn">Browse Jobs</button>
+      </div>
+
+      <div class="category-card">
+        <div class="icon-wrapper">
+          <img src="icons/briefcase.svg" alt="Finance" />
+        </div>
+        <h3>Finance</h3>
+        <p>942 jobs available</p>
+        <button class="browse-btn">Browse Jobs</button>
+      </div>
+    </div>
+  </section>
+
+  <!--For employers and job seekers-->
+  <div class="employer-jobseeker-box">
+  <!-- Employers Block -->
+  <div class="employer-box">
+    <h2>For Employers</h2>
+    <p>Find the perfect candidate for your open positions. Post a job and reach thousands of qualified professionals.</p>
+
+    <div class="info-item">
+      <div class="icon-circle">
+        <i class="fas fa-user-check"></i>
+      </div>
+      <div>
+        <strong>Access to Quality Candidates</strong>
+        <p>Connect with pre-screened, qualified professionals</p>
+      </div>
+    </div>
+
+    <div class="info-item">
+      <div class="icon-circle">
+        <i class="fas fa-clock"></i>
+      </div>
+      <div>
+        <strong>Time-Saving Tools</strong>
+        <p>Streamline your hiring process with our efficient platform</p>
+      </div>
+    </div>
+
+    <button class="btn-primary">Post a Job Now</button>
+  </div>
+
+  <!-- Job Seekers Block -->
+  <div class="jobseeker-box">
+    <h2>For Job Seekers</h2>
+    <p>Create your profile and get noticed by top employers. Set up job alerts to never miss an opportunity.</p>
+
+    <div class="info-item">
+      <div class="icon-circle light">
+        <i class="fas fa-bell"></i>
+      </div>
+      <div>
+        <strong>Personalized Job Alerts</strong>
+        <p>Get notified about jobs that match your preferences</p>
+      </div>
+    </div>
+
+    <div class="info-item">
+      <div class="icon-circle light">
+        <i class="fas fa-star"></i>
+      </div>
+      <div>
+        <strong>Career Resources</strong>
+        <p>Access guides, tips, and tools to advance your career</p>
+      </div>
+    </div>
+
+    <button class="btn-light">Create Free Account</button>
+  </div>
+</div>
+
+<!-- Footer -->
+ <footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-branding">
+      <h2><span class="logo-bold">Job</span><span class="logo-blue">Ringer</span></h2>
+      <p>Connecting talented professionals with great companies. Find your dream job or the perfect candidate with JobRinger.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <div>
+        <h4>For Job Seekers</h4>
+        <ul>
+          <li><a href="#">Browse Jobs</a></li>
+          <li><a href="#">Browse Companies</a></li>
+          <li><a href="#">Salary Calculator</a></li>
+          <li><a href="#">Career Advice</a></li>
+          <li><a href="#">Upload Resume</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>For Employers</h4>
+        <ul>
+          <li><a href="#">Post a Job</a></li>
+          <li><a href="#">Browse Candidates</a></li>
+          <li><a href="#">Pricing Plans</a></li>
+          <li><a href="#">Recruitment Solutions</a></li>
+          <li><a href="#">Advertise with Us</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Help Center</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 JobRinger. All rights reserved.</p>
+  </div>
+</footer>
+
+
+</body>
+</html>
+
+
